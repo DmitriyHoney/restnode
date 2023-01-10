@@ -1,1 +1,2 @@
 - https://www.bezkoder.com/node-express-mongodb-crud-rest-api/
+- docker run --name mongo -p 27017:27017 -d mongo

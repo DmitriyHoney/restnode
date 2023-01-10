@@ -28,3 +28,4 @@ app.get('/', (req, res) => {
 app.listen(process.env.PORT, () => {
     console.log(`Server is running http:localhost:${process.env.PORT}`);
 });
+require("./app/routes/tutorial.routes")(app);

@@ -18,13 +18,16 @@ db.mongoose
 
 const app: Express = express();
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to bezkoder application." });
 });
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server is running http:localhost:${process.env.PORT}`);
+  console.log(`Server is running http:localhost:${process.env.PORT}`);
 });
+
+require("./app/routes/tutorial.routes")(app);
